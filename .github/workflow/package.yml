@@ -1,0 +1,19 @@
+name: Publish Release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/60 */2 * * *' # Every 2 hours
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Authorize
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+      - name: Release
+        run: cd .scripts && sh ./package.sh
