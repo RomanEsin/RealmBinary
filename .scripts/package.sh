@@ -152,7 +152,7 @@ if [[ $latest != $current || $debug ]]; then
 
         echo "Creating source files..."
         generate_sources "$scratch/$sources"
-        generate_swift_package "../$package" "$home/package_template.swift" "../$distribution" $xcframeworks_repo ''
+        generate_swift_package "$scratch/$package" "$home/package_template.swift" "$scratch/$distribution" $xcframeworks_repo ''
 
         echo "Validating..."
         (cd ..; swift package dump-package | read pac)
