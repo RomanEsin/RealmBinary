@@ -164,8 +164,8 @@ if [[ $latest != $current || $debug ]]; then
     if [ -d $sources ]; then rm -rf "$sources"; fi
     if [ -f $package ]; then rm -f "$package"; fi
     # Move generated files into the repo directory
-    mv "$scratch/$sources" "$sources"
-    mv "$scratch/$package" "$package"
+    mv "$scratch/../$sources" "$sources"
+    mv "$scratch/../$package" "$package"
     
     # Skips deploy
     if [[ $skip_release ]]; then echo "Done."; exit 0; fi
