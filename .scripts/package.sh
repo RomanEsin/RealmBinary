@@ -151,8 +151,8 @@ if [[ $latest != $current || $debug ]]; then
         curl -o Realm.modulemap https://github.com/realm/realm-swift/raw/master/Realm/Realm.modulemap
 
         echo "Creating source files..."
-        generate_sources "$sources"
-        generate_swift_package "$package" "$home/package_template.swift" "$scratch/$distribution" $xcframeworks_repo ''
+        generate_sources "../$sources"
+        generate_swift_package "../$package" "$home/package_template.swift" "$scratch/$distribution" $xcframeworks_repo ''
 
         echo "Validating..."
         (cd ..; swift package dump-package | read pac)
