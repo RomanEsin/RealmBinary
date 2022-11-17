@@ -147,8 +147,8 @@ if [[ $latest != $current || $debug ]]; then
         zip_frameworks
 
         echo "Downloading Realm.h and Realm.modulemap"
-        curl -o Realm.h https://github.com/realm/realm-swift/raw/master/Realm/Realm.h
-        curl -o Realm.modulemap https://github.com/realm/realm-swift/raw/master/Realm/Realm.modulemap
+        curl -L -o Realm.h https://github.com/realm/realm-swift/raw/master/Realm/Realm.h
+        curl -L -o Realm.modulemap https://github.com/realm/realm-swift/raw/master/Realm/Realm.modulemap
 
         echo "Creating source files..."
         generate_sources "../$sources"
