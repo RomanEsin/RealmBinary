@@ -1,6 +1,6 @@
 # RealmBinary
 
-## ⚠️ WARNING Works with Xcode 14.1 (#10)
+## ⚠️ WARNING Works only with Xcode 14.1 (#10)
 
 This repository is a direct solution to [this issue](https://github.com/realm/realm-swift/issues/6898)
 
