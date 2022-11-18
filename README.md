@@ -1,5 +1,7 @@
 # RealmBinary
 
+## ⚠️ WARNING Works with Xcode 14.1 (#10)
+
 This repository is a direct solution to [this issue](https://github.com/realm/realm-swift/issues/6898)
 
 It has an action which runs every 2 hours to check if Realm has new releases. Based on similar [solution](https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks) for firebase
