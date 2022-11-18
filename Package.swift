@@ -10,7 +10,7 @@ let package = Package(
             targets: ["Realm"]),
         .library(
             name: "RealmSwift",
-            targets: ["RealmSwift"])
+            targets: ["RealmSwift", "Realm"])
     ],
     dependencies: [
     ],
