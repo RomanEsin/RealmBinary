@@ -174,7 +174,7 @@ if [[ $latest != $current || $debug ]]; then
     echo "Merging changes to Github..."
     commit_changes "release/$latest"
     echo "Creating release draft"
-    echo "Release $latest" | gh release create --target "release/$latest" --draft $latest $scratch/*.xcframework.zip
+    echo "Release $latest" | gh release create --target "release/$latest" $latest $scratch/*.xcframework.zip
 else
     echo "$current is up to date."
 fi
