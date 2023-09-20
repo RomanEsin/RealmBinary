@@ -1,7 +1,6 @@
 # RealmBinary
 
-## ⚠️ WARNING Works only with Xcode 14.1 (#10)
-### Newer Realm versions work on newer Xcode versions
+## ⚠️ WARNING Check Carthage compatability in Realm [release versions](https://github.com/realm/realm-swift/releases)
 
 This repository is a direct solution to [this issue](https://github.com/realm/realm-swift/issues/6898)
 
